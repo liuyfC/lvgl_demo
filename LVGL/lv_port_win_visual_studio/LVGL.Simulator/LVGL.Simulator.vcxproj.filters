@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="LVGL.Portable.vcxitems.filters" />
+  <Import Project="LVGL.Drivers.vcxitems.filters" />
+  <ItemGroup>
+    <ClInclude Include="lv_conf.h" />
+    <ClInclude Include="lv_drv_conf.h" />
+    <ClInclude Include="hl_gui_imgsrc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="LVGL.Simulator.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Mile.Project.Properties.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LVGL.Simulator.cpp" />
+    <ClCompile Include="hualian.c" />
+    <ClCompile Include="fengsu1_50x50.c" />
+    <ClCompile Include="fengsu2_50x50.c" />
+    <ClCompile Include="fengsu3_50x50.c" />
+    <ClCompile Include="hl_test_gui.c" />
+    <ClCompile Include="icon\auto_50x50.c">
+      <Filter>icon</Filter>
+    </ClCompile>
+    <ClCompile Include="icon\cool_50x50.c">
+      <Filter>icon</Filter>
+    </ClCompile>
+    <ClCompile Include="icon\dry_50x50.c">
+      <Filter>icon</Filter>
+    </ClCompile>
+    <ClCompile Include="icon\heat_50x50.c">
+      <Filter>icon</Filter>
+    </ClCompile>
+    <ClCompile Include="icon\sleep_50x50.c">
+      <Filter>icon</Filter>
+    </ClCompile>
+    <ClCompile Include="icon\switch_50x50.c">
+      <Filter>icon</Filter>
+    </ClCompile>
+    <ClCompile Include="icon\wind_50x50.c">
+      <Filter>icon</Filter>
+    </ClCompile>
+    <ClCompile Include="hl_test_gui1.c" />
+    <ClCompile Include="icon1\bg_pic.c">
+      <Filter>icon1</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\nav_icon_switch.c">
+      <Filter>icon1</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\mode\tab_icon_mode_auto_nor.c">
+      <Filter>icon1\mode</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\mode\tab_icon_mode_auto_pre.c">
+      <Filter>icon1\mode</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\mode\tab_icon_mode_cool_nor.c">
+      <Filter>icon1\mode</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\mode\tab_icon_mode_cool_pre.c">
+      <Filter>icon1\mode</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\mode\tab_icon_mode_dehumidification_nor.c">
+      <Filter>icon1\mode</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\mode\tab_icon_mode_dehumidification_pre.c">
+      <Filter>icon1\mode</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\mode\tab_icon_mode_heat_nor.c">
+      <Filter>icon1\mode</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\mode\tab_icon_mode_heat_pre.c">
+      <Filter>icon1\mode</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\mode\tab_icon_mode_wind_nor.c">
+      <Filter>icon1\mode</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\mode\tab_icon_mode_wind_pre.c">
+      <Filter>icon1\mode</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\banner_bg.c">
+      <Filter>icon1</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\bottom_icon_heat1.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\bottom_icon_heat2.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\sleep_diy_pop_icon_cool.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\sleep_diy_pop_icon_cool2.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\tab_icon_auto_green.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\tab_icon_auto_nor.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\tab_icon_cool_blue.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\tab_icon_cool_nor.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\tab_icon_heat_nor.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\tab_icon_heat_orange.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\tab_icon_humidification_blue.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\tab_icon_humidification_nor.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\tab_icon_wind_green.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\tabbar\tab_icon_wind_nor.c">
+      <Filter>icon1\tabbar</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\bottom_upward_bg_03.c">
+      <Filter>icon1</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_ctrl\wind_speed_1.c">
+      <Filter>icon1\wind_ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_ctrl\wind_speed_2.c">
+      <Filter>icon1\wind_ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_ctrl\wind_speed_3.c">
+      <Filter>icon1\wind_ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_ctrl\wind_speed_4.c">
+      <Filter>icon1\wind_ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_ctrl\wind_speed_5.c">
+      <Filter>icon1\wind_ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_ctrl\wind_speed_6.c">
+      <Filter>icon1\wind_ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_ctrl\wind_speed_7.c">
+      <Filter>icon1\wind_ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\anim_img\light_animation.c">
+      <Filter>icon1\anim_img</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\anim_img\tab_snow1.c">
+      <Filter>icon1\anim_img</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\anim_img\tab_snow2.c">
+      <Filter>icon1\anim_img</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\anim_img\tab_snow3.c">
+      <Filter>icon1\anim_img</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\anim_img\tab_snow4.c">
+      <Filter>icon1\anim_img</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\anim_img\water.c">
+      <Filter>icon1\anim_img</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\anim_img\windmill_fan_big.c">
+      <Filter>icon1\anim_img</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\anim_img\windmill_fan_samll.c">
+      <Filter>icon1\anim_img</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\anim_img\windmill_rod_big.c">
+      <Filter>icon1\anim_img</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\anim_img\windmill_rod_small.c">
+      <Filter>icon1\anim_img</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_electric_heating.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_fan1.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_fan2.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_fan3.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_fan4.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_fan5.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_fan6.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_fan7.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_icon_auto2.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_icon_cool.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_icon_dehumidification.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_icon_eco.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_icon_heat.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_icon_wind.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_icon_wind_up_down.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_sleep.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_wind_left_right.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\show\aircondition_control_icon_auto.c">
+      <Filter>icon1\show</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\blue\tabbar_bg_blue.c">
+      <Filter>icon1\bg_color\blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\green\control_cycle_green_a.c">
+      <Filter>icon1\bg_color\green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\green\control_cycle_green_b.c">
+      <Filter>icon1\bg_color\green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\green\control_cycle_green_c.c">
+      <Filter>icon1\bg_color\green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\green\control_cycle_green_d.c">
+      <Filter>icon1\bg_color\green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\green\control_cycle_green_e.c">
+      <Filter>icon1\bg_color\green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\green\control_cycle_green_f.c">
+      <Filter>icon1\bg_color\green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\green\tabbar_bg_green.c">
+      <Filter>icon1\bg_color\green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\orange\control_cycle_orange_a.c">
+      <Filter>icon1\bg_color\orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\orange\control_cycle_orange_b.c">
+      <Filter>icon1\bg_color\orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\orange\control_cycle_orange_c.c">
+      <Filter>icon1\bg_color\orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\orange\control_cycle_orange_d.c">
+      <Filter>icon1\bg_color\orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\orange\control_cycle_orange_e.c">
+      <Filter>icon1\bg_color\orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\orange\control_cycle_orange_f.c">
+      <Filter>icon1\bg_color\orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\orange\tabbar_bg_orange.c">
+      <Filter>icon1\bg_color\orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\blue\control_cycle_blue_a.c">
+      <Filter>icon1\bg_color\blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\blue\control_cycle_blue_b.c">
+      <Filter>icon1\bg_color\blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\blue\control_cycle_blue_c.c">
+      <Filter>icon1\bg_color\blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\blue\control_cycle_blue_d.c">
+      <Filter>icon1\bg_color\blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\blue\control_cycle_blue_e.c">
+      <Filter>icon1\bg_color\blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\temp_cycle\blue\control_cycle_blue_f.c">
+      <Filter>icon1\bg_color\blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_ctrl\tab_wind_speed_icon_auto_nor.c">
+      <Filter>icon1\wind_ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_ctrl\tab_wind_speed_icon_auto_sel.c">
+      <Filter>icon1\wind_ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_auto_nor_blue.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_auto_sel_blue.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_nor_blue_fan1.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_nor_blue_fan2.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_nor_blue_fan3.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_nor_blue_fan4.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_nor_blue_fan5.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_nor_blue_fan6.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_nor_blue_fan7.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_sel_blue_fan1.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_sel_blue_fan2.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_sel_blue_fan3.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_sel_blue_fan4.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_sel_blue_fan5.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_sel_blue_fan6.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\tab_icon_wind_speed_sel_blue_fan7.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_auto_nor_green.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_auto_sel_green.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_nor_green_fan1.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_nor_green_fan2.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_nor_green_fan3.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_nor_green_fan4.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_nor_green_fan5.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_nor_green_fan6.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_nor_green_fan7.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_sel_green_fan1.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_sel_green_fan2.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_sel_green_fan3.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_sel_green_fan4.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_sel_green_fan5.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_sel_green_fan6.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\tab_icon_wind_speed_sel_green_fan7.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\wind_tab_icon_eco_sel.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\wind_tab_icon_sleep_sel.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\wind_tab_icon_wind_direction_left_right_sel.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_green\wind_tab_icon_wind_direction_up_down_sel.c">
+      <Filter>icon1\wind_speed\wind_green</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\heat_tab_icon_eco_sel.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\heat_tab_icon_sleep_sel.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\heat_tab_icon_wind_direction_left_right_sel.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\heat_tab_icon_wind_direction_up_down_sel.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_auto_nor_orange.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_auto_sel_orange.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_nor_orange_fan1.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_nor_orange_fan2.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_nor_orange_fan3.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_nor_orange_fan4.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_nor_orange_fan5.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_nor_orange_fan6.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_nor_orange_fan7.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_sel_orange_fan1.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_sel_orange_fan2.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_sel_orange_fan3.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_sel_orange_fan4.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_sel_orange_fan5.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_sel_orange_fan6.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_orange\tab_icon_wind_speed_sel_orange_fan7.c">
+      <Filter>icon1\wind_speed\wind_orange</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\tab_icon_eco_nor.c">
+      <Filter>icon1\wind_speed</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\tab_icon_sleep_nor.c">
+      <Filter>icon1\wind_speed</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\tab_icon_wind_direction_left_right_nor.c">
+      <Filter>icon1\wind_speed</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\tab_icon_wind_direction_up_down_nor.c">
+      <Filter>icon1\wind_speed</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\cool_tab_icon_eco_sel.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\cool_tab_icon_sleep_sel.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\cool_tab_icon_wind_direction_left_right_sel.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\wind_speed\wind_blue\cool_tab_icon_wind_direction_up_down_sel.c">
+      <Filter>icon1\wind_speed\wind_blue</Filter>
+    </ClCompile>
+    <ClCompile Include="icon1\test_bg.c">
+      <Filter>icon1</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LVGL.Simulator.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="LVGL.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="freetype.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="icon">
+      <UniqueIdentifier>{06fcb482-b7ff-4855-ba1e-7b13368428cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1">
+      <UniqueIdentifier>{f6cf5250-a5d4-440b-8e59-7f15247bc692}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\mode">
+      <UniqueIdentifier>{33fb3132-5684-4a30-a2bc-b38a15308b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\wind_speed">
+      <UniqueIdentifier>{d149e7da-57d0-48ad-856d-a45f3f4d1c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\tabbar">
+      <UniqueIdentifier>{b5326ce0-ca18-4afb-80af-0a57add9de81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\wind_ctrl">
+      <UniqueIdentifier>{4a0a504e-ccd4-46f7-8223-182ea1872bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\anim_img">
+      <UniqueIdentifier>{790dd61d-4d1a-4b67-a197-95f3584600de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\show">
+      <UniqueIdentifier>{9e7636fe-a52c-40d9-8dda-62910639a177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\bg_color">
+      <UniqueIdentifier>{522c1b99-e024-4c13-a568-fdf5a8251e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\bg_color\blue">
+      <UniqueIdentifier>{965d0275-09d7-4c17-9013-330acbea400b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\bg_color\green">
+      <UniqueIdentifier>{03ae007c-0c4e-4a07-af85-7bf04750bf02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\bg_color\orange">
+      <UniqueIdentifier>{37dbe375-f23e-46a7-8a77-8eb868ac47a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\wind_speed\wind_blue">
+      <UniqueIdentifier>{7a074c97-c228-4fc5-8738-b0f3d412104b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\wind_speed\wind_green">
+      <UniqueIdentifier>{dc577843-4c2e-4d7a-abaf-a6cc8284fd58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon1\wind_speed\wind_orange">
+      <UniqueIdentifier>{207f8a7c-d674-4de2-bf16-4ceea9ec44a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

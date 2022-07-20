@@ -1,0 +1,86 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceRoot}/keil",
+    },
+    "tasks": [
+        {
+            "label": "build project", //任务名
+            "type": "shell", //任务类型
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "${workspaceRoot}/.vscode/build_project.bat", //步骤二创建的批处理文件
+                "args": [
+                    "-b", //编译工程选项
+                    "${workspaceRoot}/keil/" //文件路径
+                ]
+            },
+            "presentation": {
+                "showReuseMessage": false,
+                "clear": true,//运行前清空终端内同
+                "reveal": "always",//总是在执行任务时显示终端
+                "panel": "shared",
+                "echo": true
+            },
+            "problemMatcher": {//keil编译问题匹配
+                "owner": "echo",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/keil"
+                ],
+                "pattern": [
+                    {//输出报警或错误的匹配正则表达式
+                        "regexp": "^(\\..+)\\((\\d+)\\): (error|warning):(.*)",
+                        "file": 1,//匹配元素1为文件名称
+                        "location": 2,//匹配元素2为出现问题的位置
+                        "severity": 3,//匹配元素3为出现问题的等级
+                        "message": 4//匹配元素4为出现问题的说明
+                    }
+                ]
+            }
+        },
+        {
+            "label": "download project",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "${workspaceRoot}/.vscode/build_project.bat",
+                "args": [
+                    "-f",
+                    "${workspaceRoot}/keil/"
+                ]
+            },
+            "presentation": {
+                "showReuseMessage": false,
+                "clear": true,
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "echo",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/keil"
+                ],
+                "pattern": [
+                    {
+                        "regexp": "^(\\..+)\\((\\d+)\\): (error|warning):(.*)",
+                        "file": 1,
+                        "location": 2,
+                        "severity": 3,
+                        "message": 4
+                    }
+                ]
+            }
+        }
+    ]
+}
+
