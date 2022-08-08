@@ -54,6 +54,7 @@
     <ClCompile Include="fengsu3_50x50.c" />
     <ClCompile Include="hl_test_gui.c" />
     <ClCompile Include="hl_test_gui1.c" />
+    <ClCompile Include="hl_test_gui11.c" />
     <ClCompile Include="hualian.c" />
     <ClCompile Include="icon1\anim_img\light_animation.c" />
     <ClCompile Include="icon1\anim_img\tab_snow1.c" />
@@ -214,6 +215,8 @@
     <ClCompile Include="icon\switch_50x50.c" />
     <ClCompile Include="icon\wind_50x50.c" />
     <ClCompile Include="LVGL.Simulator.cpp" />
+    <ClCompile Include="lv_font_sourcehansansCN_16.c" />
+    <ClCompile Include="lv_font_sourcehansansCN_8.c" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LVGL.Simulator.rc" />

@@ -328,6 +328,7 @@
 
 extern void hl_scr_load(void);
 extern void hl_scr_load1(void);
+extern void hl_scr_load11(void);
 
 int main()
 {
@@ -344,8 +345,9 @@ int main()
 
     lv_win32_add_all_input_devices_to_group(NULL);
     // hl_scr_load();
-
-    hl_scr_load1();
+lv_demo_keypad_encoder();
+    // hl_scr_load1();
+    // hl_scr_load11();
     // hl_gui_init();
     // hl_gui_power_up();
     /*

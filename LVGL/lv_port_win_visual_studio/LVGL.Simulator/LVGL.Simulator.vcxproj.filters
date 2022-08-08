@@ -496,6 +496,9 @@
     <ClCompile Include="icon1\test_bg.c">
       <Filter>icon1</Filter>
     </ClCompile>
+    <ClCompile Include="hl_test_gui11.c" />
+    <ClCompile Include="lv_font_sourcehansansCN_16.c" />
+    <ClCompile Include="lv_font_sourcehansansCN_8.c" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LVGL.Simulator.rc" />

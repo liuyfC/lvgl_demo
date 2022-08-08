@@ -1456,6 +1456,52 @@ static void test1(hl_gui_mcb_t *pgui)
 }
 
 
+static void test1_btn(hl_gui_mcb_t *pgui)
+{
+    lv_obj_t *btn1;
+    lv_obj_t *btn2;
+    lv_obj_t *btn3;
+    lv_obj_t *btn4;
+    lv_obj_t *btn5;
+
+    g_group = lv_group_get_default();
+
+    btn1 = lv_btn_create(lv_scr_act());
+    lv_obj_align(btn1, LV_ALIGN_LEFT_MID, 0 , 0);
+    lv_obj_add_flag(btn1, LV_OBJ_FLAG_CHECKABLE);
+
+    btn2 = lv_btn_create(lv_scr_act());
+    lv_obj_align_to(btn2, btn1, LV_ALIGN_OUT_RIGHT_MID, 0 , 0);
+    lv_obj_add_flag(btn2, LV_OBJ_FLAG_CHECKABLE);
+
+    btn3 = lv_btn_create(lv_scr_act());
+    lv_obj_align_to(btn3, btn2, LV_ALIGN_OUT_RIGHT_MID, 0 , 0);
+    lv_obj_add_flag(btn3, LV_OBJ_FLAG_CHECKABLE);
+    
+    btn4 = lv_btn_create(lv_scr_act());
+    lv_obj_align_to(btn4, btn3, LV_ALIGN_OUT_RIGHT_MID, 0 , 0);
+    lv_obj_add_flag(btn4, LV_OBJ_FLAG_CHECKABLE);
+        
+    btn5 = lv_btn_create(lv_scr_act());
+    lv_obj_align_to(btn5, btn4, LV_ALIGN_OUT_RIGHT_MID, 0 , 0);
+    lv_obj_add_flag(btn5, LV_OBJ_FLAG_CHECKABLE);
+    lv_obj_set_size(btn5, 50, 50);
+    lv_obj_set_style_radius(btn5, 50, 0);
+    lv_obj_set_style_clip_corner(btn5, 1, 0);
+
+    lv_obj_set_style_bg_img_src(btn5, &tab_icon_mode_heat_nor, LV_STATE_DEFAULT);
+
+    lv_obj_set_style_bg_img_src(btn5, &tab_icon_mode_heat_pre, LV_STATE_CHECKED);
+    // lv_obj_set_style_bg_img_src(btn5, &tab_icon_mode_heat_pre, );
+    // lv_obj_set_style_bg_img_src(btn5, LV_IMGBTN_STATE_CHECKED_PRESSED, 0, &tab_icon_mode_heat_pre, 0);
+
+    lv_group_add_obj(g_group, btn1);
+    lv_group_add_obj(g_group, btn2);
+    lv_group_add_obj(g_group, btn3);
+    lv_group_add_obj(g_group, btn4);
+    lv_group_add_obj(g_group, btn5);
+}
+
 
 
 
@@ -1465,11 +1511,15 @@ static void test1(hl_gui_mcb_t *pgui)
 
 void hl_scr_load1(void)
 {
+
+    test1_btn(&g_hl_gui);
+    return;
+
     memset(&g_hl_gui, 0, sizeof(hl_gui_mcb_t));
 
     g_group = lv_group_create();
     lv_group_set_default(g_group);
-    lv_indev_set_group(lv_win32_encoder_device_object, g_group);
+    // lv_indev_set_group(lv_win32_encoder_device_object, g_group);
 
     g_hl_gui.scr = lv_obj_create(lv_scr_act());
     lv_obj_set_size(g_hl_gui.scr, 480, 320);
