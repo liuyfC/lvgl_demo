@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"lv_demo_widgets.h": "c",
+			"lv_flex.h": "c",
+			"type_traits": "c",
+			"xtr1common": "c",
+			"bit": "c",
+			"compare": "c",
+			"cstddef": "c",
+			"limits": "c",
+			"vector": "c",
+			"xmemory": "c",
+			"xutility": "c",
+			"lv_draw_arc.h": "c",
+			"vcruntime.h": "c",
+			"lv_conf_internal.h": "c",
+			"lv_examples.h": "c",
+			"stdio.h": "c",
+			"time.h": "c",
+			"lvgl.h": "c",
+			"hl_gui_imgsrc.h": "c",
+			"iosfwd": "c",
+			"tuple": "c",
+			"utility": "c",
+			"xstring": "c",
+			"win32drv.h": "c"
+		}
+	}
+}
